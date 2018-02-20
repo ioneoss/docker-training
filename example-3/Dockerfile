@@ -4,7 +4,7 @@
 
 FROM ionetraining/nginx:1.12.1
 
-ARG ARTIFACTS_ROOT=https://ioneoss.github.io/docker-training/artifacts
+ARG ARTIFACTS_ROOT=https://ioneoss.github.io/docker-training/artifacts/production
 
 COPY build /opt/build
 
