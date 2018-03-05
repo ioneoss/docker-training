@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  example-3a:
+    image: relenteny/example-3:prod
+    ports:
+      - "8080:80"
+
+  example-3b:
+    image: relenteny/example-3:prod
+    command: "--content startbootstrap-agency-gh-pages.zip"
+    ports:
+      - "8180:80"
+
+  example-3c:
+    image: relenteny/example-3:prod
+    command: "--content startbootstrap-creative-gh-pages.zip"
+    ports:
+      - "8280:80"
+
+  example-3d:
+    image: relenteny/example-3:dev
+    command: "--content startbootstrap-landing-page-gh-pages.zip"
+    ports:
+      - "8380:80"
